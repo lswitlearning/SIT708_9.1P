@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluebg"
+    tools:context=".CreateActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Create a new advert"
+        android:textColor="#000000"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="71dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.476">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Post type:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="35dp">
+
+            <RadioButton
+                android:id="@+id/radio_lost"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Lost"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio_found"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Found"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nametextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="317dp"
+        android:text="Name:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/edit_box"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/phoneEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/phonetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Phone:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/edit_box"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptiontextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Description:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneEditText" />
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="320dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/edit_box"
+        android:ems="10"
+        android:gravity="start|center_vertical"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/datePicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/datetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Date:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionEditText" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="320dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/edit_box"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/locationEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/locationtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Location:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datePicker" />
+
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/edit_box"
+        android:hint="Select location"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/getLocationButton"
+        android:layout_width="320dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="43dp"
+        android:background="@drawable/buttonbg"
+        android:text="Get Current Location"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationEditText" />
+
+
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="320dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/buttonbg"
+        android:text="save"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getLocationButton" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
