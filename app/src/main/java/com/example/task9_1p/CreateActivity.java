@@ -155,7 +155,7 @@ public class CreateActivity extends AppCompatActivity {
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
-        Places.initialize(getApplicationContext(), "AIzaSyArriuVKfmbYW523xEMqK7ydrxgANXXXXX");
+        Places.initialize(getApplicationContext(), "YOUR_API_KEY");
         placesClient = Places.createClient(this);
 
         // Set focusable false for locationEditText to prevent manual input
